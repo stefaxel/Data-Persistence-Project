@@ -537,6 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438960120}
   - component: {fileID: 438960121}
+  - component: {fileID: 438960122}
   m_Layer: 0
   m_Name: DataManager
   m_TagString: Untagged
@@ -571,6 +572,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7fb44243dd3c04f8b7aa50983c8d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentPlayer: 
+  highScore: 0
+  bestPlayer: 
+--- !u!114 &438960122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438960119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6af6f30495bf14ea8be4425ba3daa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: 
+  inputField: {fileID: 1103618518}
+  highScoreText: {fileID: 436917711}
+  startButton: {fileID: 348107853}
 --- !u!1 &462560776
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,6 +865,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6af6f30495bf14ea8be4425ba3daa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
+  inputField: {fileID: 0}
+  highScoreText: {fileID: 0}
+  startButton: {fileID: 0}
 --- !u!1 &999263091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1238,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 713245545}
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+        m_MethodName: StoreName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
