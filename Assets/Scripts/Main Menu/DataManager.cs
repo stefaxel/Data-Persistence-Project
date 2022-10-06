@@ -29,7 +29,7 @@ public class DataManager : MonoBehaviour
         public string savedPlayer;
     }
 
-    public void SaveGameScore(string bestPlayer, int bestScore)
+    public void SaveGameScore(string bestPlayer, int highScore)
     {
         SaveData data = new SaveData();
 

@@ -8,7 +8,7 @@ using TMPro;
 using UnityEditor;
 #endif
 
-//[DefaultExecutionOrder(1000)]
+[DefaultExecutionOrder(1000)]
 public class MenuUIHandler : MonoBehaviour
 {
     public string playerName;
@@ -21,7 +21,7 @@ public class MenuUIHandler : MonoBehaviour
     {
         startButton.interactable = false;
         DataManager.Instance.LoadSavedScore();
-        highScoreText.text = $"Highscore - {DataManager.Instance.bestPlayer.ToUpper()}: {DataManager.Instance.highScore}";
+        highScoreText.text = $"Highscore: {DataManager.Instance.bestPlayer.ToUpper()}: {DataManager.Instance.highScore}";
     }
 
     public void StartNew()
